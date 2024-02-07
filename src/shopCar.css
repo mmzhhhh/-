@@ -1,0 +1,137 @@
+
+table{
+    /*表的长宽*/
+    width: 1000px;
+    border-collapse: collapse;
+    margin: 10px auto;
+}
+
+/*表头设置*/
+th{
+    font-family: 正楷, Serif, sans-serif;
+    font-size: 20px;
+    line-height: 100px;
+    font-style: normal;
+}
+
+/*表中元素设置*/
+th,td{
+    position: relative;
+    border: none;
+    border-bottom: 3px dashed #ccc;
+    text-align: center;
+}
+
+/*放大选择框*/
+input[type='checkbox']{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+/*商品文字描述样式*/
+tbody p{
+    position: relative;
+    bottom: 10px;
+}
+
+/*删除链接*/
+a{
+    text-decoration: none;
+    font-size: 20px;
+    transition: .5s;
+}
+
+/*设置删除链接的鼠标悬浮样式*/
+.deleteA:hover{
+    color: red;
+    font-size: 40px;
+}
+
+/*设置加、减操作符的样式*/
+tbody .add,tbody .reduce{
+    width: 30px;
+    height: 30px;
+    border: 1px solid #fff;
+    text-align: center;
+    background: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/*设置商品的图片样式*/
+img{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    top: 10px;
+}
+
+input[type='number']{
+    padding: 10px;
+    border: 3px dashed #ccc;
+    font-size: 20px;
+    border-radius: 5px;
+    outline: none;
+}
+
+.add:focus,.reduce:focus{
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    transition: 1s;
+}
+
+tbody tr:hover{
+    background: #eee;
+}
+
+/*底部操作栏样式*/
+.control{
+    position:relative;
+    width: 1000px;
+    margin: 10px auto;
+    background: #fff;
+    height: auto;
+    transition: .5s;
+}
+
+.control .pay{
+    position: absolute;
+    float: right;
+}
+
+.control .pay:hover{
+    color:red;
+    font-size: 30px;
+    text-shadow: 2px 2px 5px black;
+}
+
+.control .delete_choose:hover,.control .clearAll:hover{
+    font-size: 30px;
+    color: red;
+}
+
+span{
+    color: red;
+    font-size: 50px;
+}
+
+.price,.sPrice{
+    font-size: 30px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.sPrice:hover,.price:hover{
+    color: #007bff;
+}
+
+.btn{
+    float: right;
+    width:200px;
+    height: 50px;
+    font-weight: bold;
+}
+
